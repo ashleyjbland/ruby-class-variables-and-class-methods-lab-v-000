@@ -28,7 +28,7 @@ class Song
   genre_count = {}
   @@genres.collect do |genre|
     if genre_count[genre]
-      genre_count[genre] = 1 + 1
+      genre_count[genre] += 1
     else
       genre_count[genre] = 1
   end
@@ -40,7 +40,7 @@ end
     artist_count = {}
     @@artists.collect do |artist|
       if artist_count[artist]
-        artist_count[artist] = 1 + 1
+        artist_count[artist] += 1
       else
         artist_count[artist] = 1
     end
